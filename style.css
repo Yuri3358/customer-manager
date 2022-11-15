@@ -31,8 +31,11 @@ header {
     border-style: groove;
 }
 
-#buttonsplace {
-    padding-top: 14px;
+.buttons {
+    font-size: 35px;
+    background-color: rgb(227, 31, 31);
+    color: white;
+    border-radius: 8px;
 }
 
 .entries {
@@ -43,9 +46,6 @@ header {
     color: white;
 }
 
-.buttons {
-    font-size: 35px;
-    background-color: rgb(227, 31, 31);
-    color: white;
-    border-radius: 8px;
+#buttonsplace {
+    padding-top: 14px;
 }
