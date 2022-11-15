@@ -39,14 +39,17 @@ function App(){
                     className="buttons" 
                     onClick={() => register({user, age, city})}>Registrar
                 </button>
+
                 <button 
                     className="buttons" 
                     onClick={() => remove(user)}>Remover
-                </button> <br/> 
+                </button> <br/>
+                
                 <button
                     className="buttons"
                     onClick={() => update({user, age, city})}>Atualizar
                 </button>
+
                 <button
                     className="buttons"
                     onClick={() => list()}>Consultar
