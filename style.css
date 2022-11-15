@@ -1,5 +1,11 @@
 body {
-    background-color: rgb(3, 2, 2);
+    background: repeating-linear-gradient(
+        45deg,
+        rgb(97, 96, 96) 100px,
+        rgb(32, 32, 32) 120px,
+        rgb(84, 84, 84) 100px,
+        rgb(40, 40, 40) 100px
+    )
 }
 
 label {
