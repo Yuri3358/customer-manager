@@ -1,4 +1,4 @@
-function register() {
+function register(data) {
     fetch()
 }
 
@@ -6,10 +6,10 @@ function list() {
     fetch()
 }
 
-function update() {
+function update(name) {
     fetch()
 }
 
-function remove() {
+function remove(name) {
     fetch()
 }
