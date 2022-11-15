@@ -36,11 +36,11 @@ function App(){
             </button>
             <button 
                 className="buttons" 
-                onClick={() => update()}>Atualizar
-            </button>
+                onClick={() => remove()}>Remover
+            </button> <br/> 
             <button
                 className="buttons"
-                onClick={() => remove()}>Excluir
+                onClick={() => update()}>Atualizar
             </button>
             <button
                 className="buttons"
