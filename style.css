@@ -1,6 +1,7 @@
 body {
     background-color: rgb(3, 2, 2);
 }
+
 label {
     font-size: 25px;
     color: white;
@@ -23,6 +24,7 @@ header {
 #buttonsplace {
     padding-top: 14px;
 }
+
 .entries {
     display: table;
     font-size: 20px;
