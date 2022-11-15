@@ -30,22 +30,25 @@ function App(){
                 id="cityinput"
                 onChange={e => setCity(e.target.value)}>
             </input>
-            <button 
-                className="buttons" 
-                onClick={() => save()}>Registrar
-            </button>
-            <button 
-                className="buttons" 
-                onClick={() => remove()}>Remover
-            </button> <br/> 
-            <button
-                className="buttons"
-                onClick={() => update()}>Atualizar
-            </button>
-            <button
-                className="buttons"
-                onClick={() => list()}>Consultar
-            </button>
+            <div id="buttonsplace">
+
+                <button 
+                    className="buttons" 
+                    onClick={() => save()}>Registrar
+                </button>
+                <button 
+                    className="buttons" 
+                    onClick={() => remove()}>Remover
+                </button> <br/> 
+                <button
+                    className="buttons"
+                    onClick={() => update()}>Atualizar
+                </button>
+                <button
+                    className="buttons"
+                    onClick={() => list()}>Consultar
+                </button>
+            </div>
         </section>
     )
 }
