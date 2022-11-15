@@ -9,7 +9,7 @@ function App(){
         <section id="content">
 
             <header> Gerenciador de Clientes</header>
-            
+
             <label htmlFor="userinput">Nome</label>
 
             <input 
@@ -37,15 +37,15 @@ function App(){
 
                 <button 
                     className="buttons" 
-                    onClick={() => save()}>Registrar
+                    onClick={() => register({user, age, city})}>Registrar
                 </button>
                 <button 
                     className="buttons" 
-                    onClick={() => remove()}>Remover
+                    onClick={() => remove(user)}>Remover
                 </button> <br/> 
                 <button
                     className="buttons"
-                    onClick={() => update()}>Atualizar
+                    onClick={() => update({user, age, city})}>Atualizar
                 </button>
                 <button
                     className="buttons"
