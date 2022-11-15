@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(3, 2, 2);
+}
+label {
+    font-size: 25px;
+    color: white;
+}
+
+header {
+    font-size: 1cm;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#content {
+    position: relative;
+    background-color: rgb(43, 42, 42);
+    width: 14cm;
+    height: 8.5cm;
+    top: 2cm;
+}
+
+#buttonsplace {
+    padding-top: 14px;
+}
+.entries {
+    display: table;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(72, 71, 71);
+    color: white;
+}
+
+.buttons {
+    font-size: 30px;
+    background-color: rgb(227, 31, 31);
+    color: white;
+    border-radius: 8px;
+}
