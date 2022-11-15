@@ -1,19 +1,15 @@
-function crud(op, data) {
-
-}
-
-function save() {
-
+function register() {
+    fetch()
 }
 
 function list() {
-
+    fetch()
 }
 
 function update() {
-
+    fetch()
 }
 
 function remove() {
-
+    fetch()
 }
