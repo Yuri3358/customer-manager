@@ -1,15 +1,15 @@
-function register(data) {
-    fetch()
+function register(data) { //object
+    
 }
 
-function list() {
-    fetch()
+function list() {  //get method
+    
 }
 
-function update(name) {
-    fetch()
+function update(name) { //name for find 
+    
 }
 
-function remove(name) {
-    fetch()
+function remove(name) { //name for find
+    
 }
