@@ -1,5 +1,5 @@
 const link = "https://customersapi.netlify.app/.netlify/functions/api/customers"
-function access(method) {
+function access(method, data) {
     return {
         method: method,
         headers: {
@@ -8,16 +8,23 @@ function access(method) {
         body: JSON.stringify(data)
     }
 }
-function register(data) { //object
+
+async function register(data) { //object
     const {nome, idade, cidade} = data
+    await fetch(link, access("PUT", {nome, idade, cidade}))
 }
 
-function list() {  //get method
-    
+async function list() {  //get method
+    const request = await fetch(link)
+    const response = await request.json()
 }
 
-function update(name, nova_cidade) { //name for find 
+async function update(nome, nova_cidade) { //name for find
+    let data = {nome:nome, nova_cidade:nova_cidade} 
+    await fetch(link, access("PATCH", data)) //create, retrieve, , delete
 }
 
-function remove(name) { //name for find
+async function remove(nome) { //name for find
+    await fetch(link, access("DELETE", {nome:nome}))
 }
+
