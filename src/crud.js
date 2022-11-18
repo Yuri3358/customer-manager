@@ -14,11 +14,6 @@ async function register(data) { //object
     await fetch(link, access("PUT", {nome, idade, cidade}))
 }
 
-async function list() {  //get method
-    const request = await fetch(link)
-    const response = await request.json()
-}
-
 async function update(nome, nova_cidade) { //name for find
     let data = {nome:nome, nova_cidade:nova_cidade} 
     await fetch(link, access("PATCH", data)) //create, retrieve, , delete
