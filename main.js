@@ -1,10 +1,11 @@
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
 function App(){
-    const [user, setUser] = React.useState()
-    const [age, setAge] = React.useState()
-    const [city, setCity] = React.useState()
-
+    const [nome, setUser] = React.useState()
+    const [idade, setAge] = React.useState()
+    const [cidade, setCity] = React.useState()
+    const [data, setData] = React.useState()
+    
     return (
         <section id="content">
 
@@ -37,17 +38,17 @@ function App(){
 
                 <button 
                     className="buttons" 
-                    onClick={() => register({user, age, city})}>Registrar
+                    onClick={() => register({nome, idade, cidade})}>Registrar
                 </button>
 
                 <button 
                     className="buttons" 
-                    onClick={() => remove(user)}>Remover
+                    onClick={() => remove(nome)}>Remover
                 </button> <br/>
                 
                 <button
                     className="buttons"
-                    onClick={() => update({user, age, city})}>Atualizar
+                    onClick={() => update({nome, idade, cidade})}>Atualizar
                 </button>
 
                 <button
@@ -55,6 +56,7 @@ function App(){
                     onClick={() => list()}>Consultar
                 </button>
             </div>
+            
         </section>
     )
 }
