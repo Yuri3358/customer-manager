@@ -16,7 +16,10 @@ async function register(data) { //object
 
 async function update(nome, nova_cidade) { //name for find
     let data = {nome:nome, nova_cidade:nova_cidade} 
-    await fetch(link, access("PATCH", data)) //create, retrieve, , delete
+    await fetch(link, {
+        method: "PATCH",
+        body: JSON.stringify(data)
+    })
 }
 
 async function remove(nome) { //name for find
