@@ -82,3 +82,7 @@ header {
 #cities {
     width: 220px
 }
+
+#updatebutton {
+    background-color: darkred;
+}
