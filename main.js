@@ -67,28 +67,30 @@ function App(){
                     onClick={() => setTrigger(trigger + 1)}>Consultar
                 </button>
             </div>
-        
-            <textarea 
-                defaultValue={Object.values(data).map(element => element.nome + "\r\n")} 
-                readOnly={true}
-                className="outputs"
-                id="names">
-            </textarea>
 
-            <textarea 
-                defaultValue={Object.values(data).map(element => element.idade + "\r\n")} 
-                readOnly={true}
-                className="outputs"
-                id="ages">
-            </textarea>
+            <div id="data_output">
+                <h1>Dados</h1>
+                <textarea 
+                    defaultValue={Object.values(data).map(element => element.nome + "\r\n")} 
+                    readOnly={true}
+                    className="outputs"
+                    id="names">
+                </textarea>
 
-            <textarea
-                defaultValue={Object.values(data).map(element => element.cidade + "\r\n")} 
-                readOnly={true}
-                className="outputs"
-                id="cities">
-            </textarea>
-            
+                <textarea 
+                    defaultValue={Object.values(data).map(element => element.idade + "\r\n")} 
+                    readOnly={true}
+                    className="outputs"
+                    id="ages">
+                </textarea>
+
+                <textarea
+                    defaultValue={Object.values(data).map(element => element.cidade + "\r\n")} 
+                    readOnly={true}
+                    className="outputs"
+                    id="cities">
+                </textarea>
+            </div>
         </section>
     )
 }
