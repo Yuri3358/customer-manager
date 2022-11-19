@@ -4,7 +4,18 @@ function App(){
     const [nome, setUser] = React.useState()
     const [idade, setAge] = React.useState()
     const [cidade, setCity] = React.useState()
-    const [data, setData] = React.useState()
+    const [data, setData] = React.useState([])
+    const [trigger, setTrigger] = React.useState(0)
+
+    
+    React.useEffect(() => {
+        fetch(link)
+        .then(req => req.json())
+        .then(res => {
+            setData(res)
+        })
+    }, [trigger])
+    
     
     return (
         <section id="content">
@@ -53,9 +64,30 @@ function App(){
 
                 <button
                     className="buttons"
-                    onClick={() => list()}>Consultar
+                    onClick={() => setTrigger(trigger + 1)}>Consultar
                 </button>
             </div>
+        
+            <textarea 
+                defaultValue={Object.values(data).map(element => element.nome + "\r\n")} 
+                readOnly={true}
+                className="outputs"
+                id="names">
+            </textarea>
+
+            <textarea 
+                defaultValue={Object.values(data).map(element => element.idade + "\r\n")} 
+                readOnly={true}
+                className="outputs"
+                id="ages">
+            </textarea>
+
+            <textarea
+                defaultValue={Object.values(data).map(element => element.cidade + "\r\n")} 
+                readOnly={true}
+                className="outputs"
+                id="cities">
+            </textarea>
             
         </section>
     )
