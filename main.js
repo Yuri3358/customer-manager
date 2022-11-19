@@ -59,6 +59,7 @@ function App(){
                 
                 <button
                     className="buttons"
+                    id="updatebutton"
                     onClick={() => update({nome, idade, cidade})}>Atualizar
                 </button>
 
