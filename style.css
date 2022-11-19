@@ -5,10 +5,15 @@ body {
         rgb(32, 32, 32) 180px,
         rgb(84, 84, 84) 120px,
         rgb(40, 40, 40) 120px
-    )
+        )
+    }
+
+h1 {
+    position: relative;
+    left: 5cm
 }
 
-label {
+label, h1 {
     font-size: 30px;
     color: white;
 }
@@ -19,9 +24,10 @@ header {
     text-align: center;
 }
 
+
 #content {
     background-color: rgb(43, 42, 42);
-    width: 18cm;
+    width: 25cm;
     height: 12cm;
     top: 1cm;
     margin: auto;
@@ -48,4 +54,31 @@ header {
 
 #buttonsplace {
     padding-top: 14px;
+}
+
+#data_output {
+    position: relative;
+    bottom: 9.2cm;
+    left: 11cm;
+}
+
+
+.outputs {
+    resize: none;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    font-size: 20px;
+    height: 6.8cm;
+}
+
+#names {
+    width: 197px;
+}
+
+#ages {
+    width: 53px;
+}
+
+#cities {
+    width: 220px
 }
