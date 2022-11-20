@@ -72,21 +72,21 @@ function App(){
             <div id="data_output">
                 <h1>Dados</h1>
                 <textarea 
-                    defaultValue={Object.values(data).map(element => element.nome + "\r\n")} 
+                    defaultValue={Object.values(data).map(element => element.nome).join("\r\n")} 
                     readOnly={true}
                     className="outputs"
                     id="names">
                 </textarea>
 
                 <textarea 
-                    defaultValue={Object.values(data).map(element => element.idade + "\r\n")} 
+                    defaultValue={Object.values(data).map(element => element.idade).join("\r\n")} 
                     readOnly={true}
                     className="outputs"
                     id="ages">
                 </textarea>
 
                 <textarea
-                    defaultValue={Object.values(data).map(element => element.cidade + "\r\n")} 
+                    defaultValue={Object.values(data).map(element => element.cidade).join("\r\n")}
                     readOnly={true}
                     className="outputs"
                     id="cities">
