@@ -1,4 +1,4 @@
-<h1> Sistema genérico de cadastro </h1>
+<h1> Sistema de cadastro de clientes </h1>
 
 <h2>Finalidade do projeto</h2>
 
