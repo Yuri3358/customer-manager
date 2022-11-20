@@ -6,7 +6,6 @@ function App(){
     const [cidade, setCity] = React.useState()
     const [data, setData] = React.useState([])
     const [trigger, setTrigger] = React.useState(0)
-
     
     React.useEffect(() => {
         fetch(link)
@@ -26,7 +25,7 @@ function App(){
 
             <input 
                 className="entries" 
-                id="userinput" 
+                id="userinput"
                 onChange={e => setUser(e.target.value)}>
             </input>
 
