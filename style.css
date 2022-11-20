@@ -24,7 +24,6 @@ header {
     text-align: center;
 }
 
-
 #content {
     background-color: rgb(43, 42, 42);
     width: 25cm;
@@ -44,6 +43,10 @@ header {
     border-radius: 8px;
 }
 
+.buttons:hover {
+    background-color: rgb(139, 11, 11);
+}
+
 .entries {
     display: table;
     font-size: 30px;
@@ -61,7 +64,6 @@ header {
     bottom: 9.2cm;
     left: 11cm;
 }
-
 
 .outputs {
     resize: none;
@@ -85,9 +87,5 @@ header {
 }
 
 #updatebutton {
-    background-color: darkred;
-}
-
-.textareas {
-    display: inline;
+    background-color: black;
 }
