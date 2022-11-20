@@ -10,19 +10,14 @@ function App(){
     React.useEffect(() => {
         fetch(link)
         .then(req => req.json())
-        .then(res => {
-            setData(res)
-        })
+        .then(res => {setData(res)})
     }, [trigger])
-    
-    
+
     return (
         <section id="content">
-
             <header> Gerenciador de Clientes</header>
 
             <label htmlFor="userinput">Nome</label>
-
             <input 
                 className="entries" 
                 id="userinput"
@@ -30,7 +25,6 @@ function App(){
             </input>
 
             <label htmlFor="ageinput">Idade</label>
-
             <input 
                 className="entries" 
                 id="ageinput"
@@ -38,19 +32,18 @@ function App(){
             </input>
 
             <label htmlFor="cityinput">Cidade</label>
-
             <input 
                 className="entries" 
                 id="cityinput"
                 onChange={e => setCity(e.target.value)}>
             </input>
-            <div id="buttonsplace">
 
+            <div id="buttonsplace">
                 <button 
                     className="buttons" 
                     onClick={() => register({nome, idade, cidade})}>Registrar
                 </button>
-
+                
                 <button 
                     className="buttons" 
                     onClick={() => remove(nome)}>Remover
@@ -70,13 +63,14 @@ function App(){
 
             <div id="data_output">
                 <h1>Dados</h1>
+            
                 <textarea 
                     defaultValue={Object.values(data).map(element => element.nome).join("\r\n")} 
                     readOnly={true}
                     className="outputs"
                     id="names">
                 </textarea>
-
+                
                 <textarea 
                     defaultValue={Object.values(data).map(element => element.idade).join("\r\n")} 
                     readOnly={true}
