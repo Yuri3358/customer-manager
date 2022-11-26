@@ -11,15 +11,7 @@ function access(method, data) {
 
 async function register(data) { //object
     const {nome, idade, cidade} = data
-    await fetch(link, access("PUT", {nome, idade, cidade}))
-}
-
-async function update(nome, nova_cidade) { //name for find
-    let data = {nome:nome, nova_cidade:nova_cidade} 
-    await fetch(link, {
-        method: "PATCH",
-        body: JSON.stringify(data)
-    })
+    await fetch(link, access("POST", {nome, idade, cidade}))
 }
 
 async function remove(nome) { //name for find
