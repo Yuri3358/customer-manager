@@ -41,6 +41,7 @@ header {
     background-color: rgb(227, 31, 31);
     color: white;
     border-radius: 8px;
+    display: flex;
 }
 
 .buttons:hover {
@@ -61,8 +62,8 @@ header {
 
 #data_output {
     position: relative;
-    bottom: 9.2cm;
-    left: 11cm;
+    bottom: 10.2cm;
+    left: 11.5cm;
 }
 
 .outputs {
@@ -84,8 +85,4 @@ header {
 
 #cities {
     width: 220px
-}
-
-#updatebutton {
-    background-color: black;
 }
