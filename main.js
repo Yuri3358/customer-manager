@@ -5,7 +5,7 @@ function App(){
     const [idade, setAge] = React.useState()
     const [cidade, setCity] = React.useState()
     const [data, setData] = React.useState([])
-    const [trigger, setTrigger] = React.useState(0)
+    const [trigger, setTrigger] = React.useState(1)
     
     React.useEffect(() => {
         fetch(link)
@@ -47,17 +47,11 @@ function App(){
                 <button 
                     className="buttons" 
                     onClick={() => remove(nome)}>Remover
-                </button> <br/>
-                
-                <button
-                    className="buttons"
-                    id="updatebutton"
-                    onClick={() => update({nome, idade, cidade})}>Atualizar
                 </button>
-
+            
                 <button
                     className="buttons"
-                    onClick={() => setTrigger(trigger + 1)}>Consultar
+                    onClick={() => setTrigger(trigger * -1)}>Consultar
                 </button>
             </div>
 
