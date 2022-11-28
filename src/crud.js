@@ -17,4 +17,3 @@ async function register(data) { //object
 async function remove(nome) { //name for find
     await fetch(link, access("DELETE", {nome:nome}))
 }
-
